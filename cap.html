@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belal Cap Industries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      padding: 2rem;
+      background: url('https://via.placeholder.com/1200x400?text=Belal+Cap+Industries') center/cover no-repeat;
+      text-align: center;
+      color: white;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .product {
+      background-color: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+
+    .product button {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background-color: #444;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Belal Cap Industries</h1>
+    <p>Premium Cap Manufacturer in India</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Stylish. Comfortable. Affordable.</h2>
+    <p>Check out our latest collection of caps below!</p>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Cap+1" alt="Cap 1">
+      <h3>Classic Black Cap</h3>
+      <p>₹199</p>
+      <button onclick="order('Classic Black Cap')">Order Now</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Cap+2" alt="Cap 2">
+      <h3>Red Sports Cap</h3>
+      <p>₹249</p>
+      <button onclick="order('Red Sports Cap')">Order Now</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Cap+3" alt="Cap 3">
+      <h3>Trendy White Cap</h3>
+      <p>₹229</p>
+      <button onclick="order('Trendy White Cap')">Order Now</button>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 2rem;">
+    <h2>Contact Us</h2>
+    <p>Email: belalcapindustries@gmail.com</p>
+    <p>Phone: +91 9973447831</p>
+    <p>Location: Okhla, New Delhi</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Belal Cap Industries. All rights reserved.
+  </footer>
+
+  <script>
+    function order(productName) {
+      alert("Thank you for showing interest in: " + productName + "!\nWe will contact you soon via WhatsApp.");
+    }
+  </script>
+</body>
+</html>
